@@ -1,0 +1,18 @@
+{
+    "tasks": [
+        {
+            "label": "Remote Build",
+            "type": "cmsis-csolution.remote-build",
+            "project": "${workspaceFolder}/Blinky.cprj",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash Device",
+            "type": "embedded-debug.flash",
+            "serialNumber": "${command:device-manager.getSerialNumber}",
+            "program": "${command:embedded-debug.getBinaryFile}",
+            "cmsisPack": "${workspaceFolder}/NXP.K32L3A60_DFP.15.0.0.pack",
+            "problemMatcher": []
+        }
+    ]
+}
